@@ -12,6 +12,8 @@
 		71F7C8051DB9A08100733AC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F7C8031DB9A08100733AC0 /* Main.storyboard */; };
 		71F7C8071DB9A08100733AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71F7C8061DB9A08100733AC0 /* Assets.xcassets */; };
 		71F7C80A1DB9A08100733AC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F7C8081DB9A08100733AC0 /* LaunchScreen.storyboard */; };
+		71F7C8121DB9B16D00733AC0 /* MemoriesCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7C8111DB9B16D00733AC0 /* MemoriesCollectionVC.swift */; };
+		71F7C8191DB9B42D00733AC0 /* MemoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7C8181DB9B42D00733AC0 /* MemoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		71F7C8061DB9A08100733AC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71F7C8091DB9A08100733AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71F7C80B1DB9A08100733AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71F7C8111DB9B16D00733AC0 /* MemoriesCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoriesCollectionVC.swift; sourceTree = "<group>"; };
+		71F7C8181DB9B42D00733AC0 /* MemoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MemoryCell.swift; path = ../MemoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,39 @@
 			isa = PBXGroup;
 			children = (
 				71F7C7FF1DB9A08100733AC0 /* AppDelegate.swift */,
+				71F7C8131DB9B18900733AC0 /* Controllers */,
+				71F7C8151DB9B2E400733AC0 /* Storyboard */,
+				71F7C8141DB9B1A300733AC0 /* Resources */,
+			);
+			path = GloryDays;
+			sourceTree = "<group>";
+		};
+		71F7C8131DB9B18900733AC0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				71F7C8011DB9A08100733AC0 /* ViewController.swift */,
-				71F7C8031DB9A08100733AC0 /* Main.storyboard */,
+				71F7C8111DB9B16D00733AC0 /* MemoriesCollectionVC.swift */,
+				71F7C8181DB9B42D00733AC0 /* MemoryCell.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		71F7C8141DB9B1A300733AC0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				71F7C8061DB9A08100733AC0 /* Assets.xcassets */,
 				71F7C8081DB9A08100733AC0 /* LaunchScreen.storyboard */,
 				71F7C80B1DB9A08100733AC0 /* Info.plist */,
 			);
-			path = GloryDays;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		71F7C8151DB9B2E400733AC0 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				71F7C8031DB9A08100733AC0 /* Main.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71F7C8191DB9B42D00733AC0 /* MemoryCell.swift in Sources */,
 				71F7C8021DB9A08100733AC0 /* ViewController.swift in Sources */,
 				71F7C8001DB9A08100733AC0 /* AppDelegate.swift in Sources */,
+				71F7C8121DB9B16D00733AC0 /* MemoriesCollectionVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +295,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CLPS65YG8N;
 				INFOPLIST_FILE = GloryDays/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = diodo.diodus.org.GloryDays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +309,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CLPS65YG8N;
 				INFOPLIST_FILE = GloryDays/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = diodo.diodus.org.GloryDays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +336,7 @@
 				71F7C8101DB9A08100733AC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
